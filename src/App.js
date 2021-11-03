@@ -3,6 +3,10 @@ import FooterComponent from "./footerComponent";
 import Header from "./headerComponent";
 import MainComponent from "./mainComponent";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import ContactComponent from "./contactComponent";
+import CommercialComponent from "./commercialComponent";
+import CreativeComponent from "./creativeComponent";
+import AboutComponent from "./aboutComponent";
 
 function App() {
   return (
@@ -10,9 +14,18 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/creative">{/* <Creative /> */}</Route>
-          <Route path="/contact">{/* <Contact /> */}</Route>
-          <Route path="/">{/* <Home /> */}</Route>
+          <Route path="/about">
+            <AboutComponent />
+          </Route>
+          <Route path="/creative">
+            <CreativeComponent />
+          </Route>
+          <Route path="/contact">
+            <ContactComponent />
+          </Route>
+          <Route path="/">
+            <CommercialComponent />
+          </Route>
         </Switch>
         <FooterComponent />
       </div>

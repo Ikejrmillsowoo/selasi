@@ -1,0 +1,20 @@
+.video {
+    margin: 1.5em;
+}
+
+@media only screen and (min-width: 768px) {
+    .video {
+        width: 80vw;
+        margin: auto;
+        margin-top: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .video {
+        width: 60vw;
+        /* height: 60%; */
+        margin: auto;
+        margin-top: .5em;
+    }
+}

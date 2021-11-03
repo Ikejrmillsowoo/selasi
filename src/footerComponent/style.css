@@ -2,11 +2,9 @@
     position: absolute;
     bottom: 0;
     width: 100vw;
-    height: 2.5rem;
     display: flex;
     justify-content: space-evenly;
-    height: 3rem;
-    display: flex;
+    height: 2.5rem;
     flex-direction: column;
     color: whitesmoke;
 }
@@ -22,6 +20,14 @@
 
 .footer_copy h6 {
     font-weight: lighter;
-    margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 1200px) {
+    .footer_links {
+        justify-content: center;
+    }
+    .footer a {
+       margin: 0 1em;
+    }
 }
 
