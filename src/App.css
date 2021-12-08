@@ -2,8 +2,23 @@
   text-align: center;
   background-color: black;
   min-height: 100vh;
+  max-width: 100%;
   position: relative;
   color: white;
   font-family: 'Hahmlet', serif;
   
 }
+/* 
+@media only screen and (min-width: 768px) {
+  .App {
+    max-width: 80vh;
+    margin: auto;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .App {
+    max-width: 60vh;
+  }
+} */

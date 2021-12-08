@@ -47,30 +47,48 @@ function Header() {
             className="toggle"
           /> */}
 
-          <Collapse isOpen={isOpen}>
-            <Nav className="header_links">
-              <NavItem className="item_nav">
-                <Link to="/" className="item_link">
+          {/* <Collapse isOpen={isOpen}> */}
+          <div className="header_links">
+            <div className="links" id={isOpen ? "hidden" : ""}>
+              <div className="item_nav">
+                <Link
+                  to="/"
+                  className="item_link"
+                  onClick={!isOpen ? toggle : ""}
+                >
                   Commercial.
                 </Link>
-              </NavItem>
-              <NavItem className="item_nav">
-                <Link to="/creative" className="item_link">
+              </div>
+              <div className="item_nav">
+                <Link
+                  to="/creative"
+                  className="item_link"
+                  onClick={!isOpen ? toggle : ""}
+                >
                   Creative.
                 </Link>
-              </NavItem>
-              <NavItem className="item_nav">
-                <Link to="/contact" className="item_link">
+              </div>
+              <div className="item_nav">
+                <Link
+                  to="/contact"
+                  className="item_link"
+                  onClick={!isOpen ? toggle : ""}
+                >
                   Contact.
                 </Link>
-              </NavItem>
-              <NavItem className="item_nav">
-                <Link to="/about" className="item_link">
+              </div>
+              <div className="item_nav">
+                <Link
+                  to="/about"
+                  className="item_link"
+                  onClick={!isOpen ? toggle : ""}
+                >
                   About.
                 </Link>
-              </NavItem>
-            </Nav>
-          </Collapse>
+              </div>
+            </div>
+          </div>
+          {/* </Collapse> */}
         </div>
       </Navbar>
     </div>

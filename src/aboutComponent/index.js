@@ -1,5 +1,5 @@
 import React from "react";
-import { CardImg } from "reactstrap";
+import CardComponent from "../cardComponent";
 import MainComponent from "../mainComponent";
 import "./style.css";
 
@@ -7,10 +7,7 @@ function AboutComponent() {
   return (
     <div>
       <MainComponent />
-      <CardImg
-        className="image_display"
-        src="images/american_advertising.jpg"
-      />
+      <CardComponent />
     </div>
   );
 }

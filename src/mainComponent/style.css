@@ -1,15 +1,20 @@
 .main {
    margin: auto;
-   margin-top: 3em;
-   font-size: 1.5em;
+  
+   font-size: 1em;
    text-transform:uppercase;
  
 }
 
 .main_info {
      width: 50%;
-     margin: auto;
-     margin-top: 2em;
+     margin: 1em auto;
      text-transform:none;
    
+}
+
+@media only screen and (min-width: 768px) {
+   .main_title {
+      margin-top: 2em;
+   }
 }
