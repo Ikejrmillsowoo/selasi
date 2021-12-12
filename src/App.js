@@ -1,8 +1,8 @@
 import "./App.css";
 import FooterComponent from "./footerComponent";
 import Header from "./headerComponent";
-import MainComponent from "./mainComponent";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ContactComponent from "./contactComponent";
 import CommercialComponent from "./commercialComponent";
 import CreativeComponent from "./creativeComponent";
