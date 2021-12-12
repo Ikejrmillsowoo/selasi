@@ -1,17 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  Nav,
-  NavItem,
-  NavLink,
-  NavbarText,
-  Navbar,
-  NavbarToggler,
-  Collapse,
-  Button,
-  Input,
-  CardImg,
-} from "reactstrap";
+import { Navbar } from "reactstrap";
 import "./style.css";
 
 function Header() {
@@ -24,13 +13,7 @@ function Header() {
     <div className="header">
       <Navbar className="navbar_main">
         <div className="header_title">
-          {/* <NavbarText className="logo"> */}
-          <img className="logo" src="images/1200.jpg" />
-          {/* Se<span>las</span>i K. */}
-          {/* </NavbarText> */}
-          {/* <NavbarText className="logo_title">
-            DIRECTOR // DP // EDITOR
-          </NavbarText> */}
+          <img className="logo" src="images/1200.jpg" alt="Selasi" />
         </div>
         <div className="header_below">
           <a className="toggle" href="#" onClick={toggle}>
@@ -39,15 +22,6 @@ function Header() {
             <span className="bar"></span>
           </a>
 
-          {/* <NavbarToggler className="toggle" onClick={toggle} /> */}
-          {/* <Input
-            type="button"
-            onClick={toggle}
-            value="menu"
-            className="toggle"
-          /> */}
-
-          {/* <Collapse isOpen={isOpen}> */}
           <div className="header_links">
             <div className="links" id={isOpen ? "hidden" : ""}>
               <div className="item_nav">
@@ -88,7 +62,6 @@ function Header() {
               </div>
             </div>
           </div>
-          {/* </Collapse> */}
         </div>
       </Navbar>
     </div>

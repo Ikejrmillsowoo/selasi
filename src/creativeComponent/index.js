@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import ReactPlayer from "react-player";
+
 import VideoComponent from "../videoComponent";
 
 function CreativeComponent() {

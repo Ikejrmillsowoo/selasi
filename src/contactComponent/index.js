@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./style.css";
-import MainComponent from "../mainComponent";
-import { Button, FormGroup, Input } from "reactstrap";
+
+import { FormGroup, Input } from "reactstrap";
 import { Formik, Form } from "formik";
 import * as yup from "yup";
 import emailjs from "emailjs-com";
@@ -47,17 +47,6 @@ function ContactComponent() {
             inquiry: "",
             lastname: "",
           }}
-          // validate={(values) => {
-          //   const errors = {};
-          //   if (!values.email) {
-          //     errors.email = "Required";
-          //   } else if (
-          //     !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-          //   ) {
-          //     errors.email = "Invalid email address";
-          //   }
-          //   return errors;
-          // }}
           validationSchema={contactSchema}
           onSubmit={(values, { setSubmitting }) => {
             setTimeout(() => {
@@ -75,13 +64,11 @@ function ContactComponent() {
             handleSubmit,
             isSubmitting,
             isValid,
-            /* and other goodies */
           }) => (
             <Form ref={form} onSubmit={sendEmail}>
               <div className="myForm">
                 <div className="contact_first">
                   <FormGroup className="contact_item">
-                    {/* <Label for="firstname">First Name:</Label> */}
                     <Input
                       className="input"
                       type="text"
@@ -96,7 +83,6 @@ function ContactComponent() {
                     ) : null}
                   </FormGroup>
                   <FormGroup className="contact_item">
-                    {/* <Label for="lastname">Last Name:</Label> */}
                     <Input
                       className="input"
                       type="text"
@@ -113,7 +99,6 @@ function ContactComponent() {
                 </div>
                 <div className="contact_second">
                   <FormGroup className="contact_item">
-                    {/* <Label for="email">Email</Label> */}
                     <Input
                       className="input"
                       type="email"
@@ -128,7 +113,6 @@ function ContactComponent() {
                     ) : null}
                   </FormGroup>
                   <FormGroup className="contact_item">
-                    {/* <Label for="email">Project Type</Label> */}
                     <Input
                       className="input"
                       type="text"
@@ -142,7 +126,6 @@ function ContactComponent() {
                 </div>
               </div>
               <FormGroup className="contact_item">
-                {/* <Label for="email">Inquiry</Label> */}
                 <Input
                   className="input"
                   type="textarea"
@@ -158,16 +141,9 @@ function ContactComponent() {
                 className="button"
                 color="primary"
                 type="submit"
-                disabled={isSubmitting}
+                // disabled={isSubmitting}
                 disabled={!isValid}
               />
-              {/* <Button
-                onPress={handleSubmit}
-                title="Sign Up"
-                disabled={!isValid}
-              /> */}
-              {/* Submit
-            </input> */}
             </Form>
           )}
         </Formik>

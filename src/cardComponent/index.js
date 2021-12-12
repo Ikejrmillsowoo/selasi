@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+
 import Image from "react-bootstrap/Image";
 import "./style.css";
 
@@ -18,20 +18,6 @@ function CardComponent() {
         </div>
       </div>
     </div>
-    // <div className="images">
-    //   <
-    //     className="image_display"
-    //     src="images/american_advertising.jpg"
-    //   />
-    //   <CardImg
-    //     className="image_display"
-    //     src="images/american_advertising.jpg"
-    //   />
-    //   <CardImg
-    //     className="image_display"
-    //     src="images/american_advertising.jpg"
-    //   />
-    // </div>
   );
 }
 
